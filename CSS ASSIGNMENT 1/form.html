@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+        <title>
+            Students Registration Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>STUDENT REGISTRATION FORM</h1><br><br>
+        </header>
+        <div id = "formContainer">
+            <form id = "formC">
+                <label class="label">Name :</label>
+                        <input class="input" type="text" id="name" name="name" required><br><br>
+    
+                    <div class="column">
+                        <label class="label">Phone No :</label>
+                        <input class="input" type="text" id="phone" name="phone" required><br><br>
+                    </div>
+    
+                    <div class="column" >
+                        <label class="label">Date Of Birth :</label>
+                        <input class="input" type="date" id="dob" name="dob" required><br><br>
+                    </div>
+
+                    <div class = "column">
+                        <label class="label">Address :</label>
+                        <textarea class="input" id="address" name="address" required cols="20" rows="5"></textarea><br><br><br>
+                        <br><br><br><br>
+                    </div>
+
+                    <div class = "column">
+                        <label class="label">Gender :</label>
+                        <input type="radio" name="gender"/> Male
+                        <input type="radio" name="gender"/> Female
+                        <br><br>
+                    </div>
+    
+                    <label class="label">City :</label>
+                    <select name="city" id="city">
+                        <option value="">--Select--</option>
+                        <option value="Gurugram">Gurugram</option>
+                        <option value="Aligarh">Aligarh</option>
+                        <option value="Delhi">Delhi</option>
+                    </select><br><br>
+    
+                    <label class="label">Hobbies:</label><br>
+                    <div class="column">
+                        <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+                        <label for="hobby1">Music</label><br>
+                        <input type="checkbox" id="hobby2" name="hobbies" value="Travelling">
+                        <label for="hobby2">Sports</label><br>
+                        <input type="checkbox" id="hobby3" name="hobbies" value="Cooking">
+                        <label for="hobby3">Reading</label><br><br>
+                    </div>
+    
+                    <div align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </div>
+            </form><br><br>
+        </div>
+        <h2 align = "center">Student Records</h2><br>
+        <div align="center">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>S.No.</th>
+                    <th>Name.</th>
+                    <th>Phone no.</th>
+                    <th>Gender</th>
+                    <th>DOB</th>
+                    <th>Interests</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Akash</td>
+                    <td>9123-4-567</td>
+                    <td>Male</td>
+                    <td>12/12/1996</td>
+                    <td>Music,Dance,Cooking</td>
+                  </tr>
+                  <tr>
+                    <td>1</td>
+                    <td>Akash</td>
+                    <td>9122-2-567</td>
+                    <td>Male</td>
+                    <td>12/12/1996</td>
+                    <td>Dance,Travel</td>
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </body>
+</html>
